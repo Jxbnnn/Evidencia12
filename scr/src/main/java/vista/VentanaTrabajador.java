@@ -3,7 +3,6 @@ package vista;
 import modelo.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,13 +19,11 @@ public class VentanaTrabajador extends JFrame {
         setTitle("Registro de Trabajadores");
         setLayout(new BorderLayout());
 
-        // Panel de formulario
         JPanel panelFormulario = new JPanel(new GridLayout(5, 2));
         txtNombre = new JTextField();
         txtApellido = new JTextField();
         txtRut = new JTextField();
 
-        // Combos para Previsión y AFP
         cbSalud = new JComboBox<>();
         cbSalud.addItem(new Fonasa());
         cbSalud.addItem(new Isapre("Banmédica", 12.0));
@@ -35,15 +32,12 @@ public class VentanaTrabajador extends JFrame {
         cbAFP.addItem(new AFP("Capital", 10.0));
         cbAFP.addItem(new AFP("Habitat", 11.5));
 
-        // Botones
         btnAgregar = new JButton("Agregar a Lista");
         btnGuardar = new JButton("Guardar Todos");
 
-        // Área de resultados
         txtResultados = new JTextArea(10, 30);
         txtResultados.setEditable(false);
 
-        // Agregar componentes al panel
         panelFormulario.add(new JLabel("Nombre:"));
         panelFormulario.add(txtNombre);
         panelFormulario.add(new JLabel("Apellido:"));
@@ -55,17 +49,14 @@ public class VentanaTrabajador extends JFrame {
         panelFormulario.add(new JLabel("AFP:"));
         panelFormulario.add(cbAFP);
 
-        // Panel de botones
         JPanel panelBotones = new JPanel();
         panelBotones.add(btnAgregar);
         panelBotones.add(btnGuardar);
 
-        // Contenedor principal
         add(panelFormulario, BorderLayout.NORTH);
         add(new JScrollPane(txtResultados), BorderLayout.CENTER);
         add(panelBotones, BorderLayout.SOUTH);
 
-        // Eventos
         btnAgregar.addActionListener(e -> agregarTrabajador());
         btnGuardar.addActionListener(e -> guardarTrabajadores());
 

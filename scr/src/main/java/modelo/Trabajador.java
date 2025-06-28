@@ -10,7 +10,6 @@ public class Trabajador extends Persona {
         this.afp = afp;
     }
 
-    // Getters
     public PrevisionSalud getPrevisionSalud() { return previsionSalud; }
     public AFP getAfp() { return afp; }
 }
