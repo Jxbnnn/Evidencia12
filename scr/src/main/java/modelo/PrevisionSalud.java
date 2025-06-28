@@ -1,10 +1,10 @@
 package modelo;
 
-public class Isapre {
-    private String nombre;
-    private double porcentaje;
+public abstract class PrevisionSalud {
+    protected String nombre;
+    protected double porcentaje;
 
-    public Isapre(String nombre, double porcentaje) {
+    public PrevisionSalud(String nombre, double porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }
