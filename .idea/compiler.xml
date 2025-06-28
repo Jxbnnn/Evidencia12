@@ -9,5 +9,8 @@
         <module name="scr" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="images" target="23" />
+    </bytecodeTargetLevel>
   </component>
 </project>
