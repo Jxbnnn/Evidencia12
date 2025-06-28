@@ -6,7 +6,7 @@
 - Francisca Aguayo  
 
 Modelo de clases generado en VisualParadigm (images/VISUAL PARADIGM.jpeg)
-
+https://github.com/Jxbnnn/Evidencia12/blob/main/images/VISUAL%20PARADIGM.jpeg
 
 
 
