@@ -4,6 +4,7 @@ import vista.VentanaTrabajador;
 
 public class Main {
     public static void main(String[] args) {
-        new VentanaTrabajador().setVisible(true);
+        VentanaTrabajador ventana = new VentanaTrabajador();
+        ventana.setVisible(true);
     }
 }
